@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: maven-hello-world-ygej
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/build-e2e-sfoi-tenant/test-app-rhab/maven-hello-world-ygej@sha256:0668cb5b89feaae637d38646d6bc93ba915a706be2886126b7000ee67053f725
+        name: my-java-quarkus
+        resources: {}
+status: {}
