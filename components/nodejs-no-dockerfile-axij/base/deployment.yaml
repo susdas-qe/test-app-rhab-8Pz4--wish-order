@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: nodejs-no-dockerfile-axij
     spec:
       containers:
-      - image: nodejs-image:latest
+      - image: quay.io/redhat-appstudio-qe/build-e2e-sfoi-tenant/test-app-rhab/nodejs-no-dockerfile-axij@sha256:9cfc7ac1a22982c41d3dc32a3c0bb496f952c03bf6c03cfb6d3bba1006841eef
         name: my-nodejs
         ports:
         - containerPort: 3001
